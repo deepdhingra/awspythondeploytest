@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>LOGIN PAGE</h2>
+
+<form action="login" method="POST">
+  {% csrf_token %}
+  <label>User Name</label><br>
+  <input type="text" name="username" ><br>
+  <label>Password</label><br>
+  <input type="password" name="password" ><br><br>
+  <input type="submit" value="Submit"><br><br>
+  <a href="{{link3}}">forgot password</a>
+  <a href="signup"> signup </a>
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to database.</p>
+
+</body>
+</html>
